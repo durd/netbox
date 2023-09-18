@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>{{ title }}</title>
+    </head>
+    <body>
+        <h1>Hello {{ nb }}</h1>
+        <label for="sites">Choose a site:</label>
+        <select name="sites" id="sites">
+            {% for site in nb %}
+            <option value="{{ site.id }}">{{ site.name }}</option>
+            {% endfor %}
+        </select> 
+    </body>
+</html>

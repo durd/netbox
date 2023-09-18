@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>{{ title }}</title>
+    </head>
+    <body>
+        <h1>Hello {{ nb }}</h1>
+        <label for="regions">Choose a region:</label>
+        <select name="regions" id="regions">
+            {% for region in nb %}
+            <option value="{{ region.id }}">{{ region.name }}</option>
+            {% endfor %}
+        </select> 
+    </body>
+</html>
