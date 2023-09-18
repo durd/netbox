@@ -5,8 +5,8 @@ import ipaddress, json, jsonpickle
 from pprint import pprint
 
 nb = pynetbox.api(
-    'http://ftp.int.durd.net:8000',
-    token='3ea4b5590d0f53d583453e76dc1f5b86f0210ae4'
+    'http://url',
+    token='tååken'
 )
 
 print('device\t\tsite\t\tsite id')
